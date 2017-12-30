@@ -1,0 +1,38 @@
+.main-nav {
+  width: 100%; }
+
+.main-nav ul {
+  padding: 12px 0; }
+  .main-nav ul li {
+    display: inline-block;
+    color: #fff;
+    padding: 0 12px; }
+  .main-nav ul a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    position: relative; }
+    .main-nav ul a:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 4px;
+      background-color: #fff;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: 0.2s all ease-in-out;
+      -moz-transition: 0.2s all ease-in-out;
+      -ms-transition: 0.2s all ease-in-out;
+      -o-transition: 0.2s all ease-in-out;
+      -ms-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out; }
+    .main-nav ul a:hover:before {
+      width: 100%; }

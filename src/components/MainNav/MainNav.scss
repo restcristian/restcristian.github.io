@@ -1,0 +1,43 @@
+// MAIN NAV STYLES
+@import '../../_mixins';
+.main-nav{
+    width:100%;
+}
+
+.main-nav ul{
+    padding:12px 0;
+    li{
+        display: inline-block;
+        color:#fff;
+        padding:0 12px;
+    }
+
+    a{
+        color:#fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        
+        &:before{
+            content:'';
+            position: absolute;
+            width:0;
+            height: 4px;
+            background-color: #fff;
+            top:50%;
+            left:0;
+            @include transform(translateY(-50%));
+            @include transition(.2s all ease-in-out);
+        }
+
+        &:hover{
+            &:before{
+                width:100%;
+            }
+        }
+        
+    }
+}
