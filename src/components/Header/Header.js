@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import logo from '../../imgs/logo_w.png';
 import MainNav from '../MainNav/MainNav';
+import PDF from '../../downloadables/Resume_CristianAlbertoRestituyoNunez.pdf';
 
 
 
@@ -15,7 +16,7 @@ const Header = (props) => {
       <p className="reset-padm">
         <a href="https://github.com/restcristian" target="_blank" rel="noopener noreferrer" >Github</a>
         <span style={{ padding: "0 6px" }}>|</span>
-        <a href="../../downloadables/Resume_CristianAlbertoRestituyoNunez.pdf" rel="noopener noreferrer" target="_blank">Résumé</a>
+        <a href={PDF} rel="noopener noreferrer" target="_blank">Résumé</a>
       </p>
       <p className="cursor reset-padm">|</p>
     </div>

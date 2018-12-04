@@ -6,8 +6,7 @@ import { NavLink } from 'react-router-dom';
 const MainNav = (props) => {
     let links = [
         { itemName: "About Me", section: "/" },
-        { itemName: "Projects", section: "/projects" },
-        { itemName: "Contact Me", section: "/contact" }
+        { itemName: "Projects", section: "/projects" }
     ];
     return (
         <nav className="main-nav">
