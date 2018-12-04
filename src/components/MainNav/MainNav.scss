@@ -6,10 +6,13 @@
 
 .main-nav ul{
     padding:12px 0;
+    display:flex;
+    justify-content: center;
     li{
         display: inline-block;
         color:#fff;
         padding:0 12px;
+        text-align: center;
     }
 
     a{
@@ -20,6 +23,7 @@
         font-size: 16px;
         display: inline-block;
         position: relative;
+
         
         &:before{
             content:'';
@@ -33,7 +37,7 @@
             @include transition(.2s all ease-in-out);
         }
 
-        &:hover{
+        &:hover,&.active{
             &:before{
                 width:100%;
             }

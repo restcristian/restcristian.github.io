@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One|Kanit:400,700");
-.main-header {
-  background-color: #000;
-  height: 100vh;
-  position: relative;
-  text-align: center; }
-
 .header-txt {
   position: absolute;
   top: 50%;
@@ -15,7 +9,8 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  text-align: center; }
   .header-txt .author-name {
     text-transform: uppercase;
     font-weight: bold;
@@ -39,6 +34,25 @@
   bottom: 0;
   left: 0;
   width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  display: inline-block;
+  position: relative; }
+  a:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #fff;
+    top: calc(50% + 2px);
+    left: 0;
+    transform: translateY(-50%);
+    transition: .2s all ease-in-out; }
+  a:hover:before {
+    width: 100%; }
 
 @keyframes fade-in-out {
   from {

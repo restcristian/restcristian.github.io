@@ -1,56 +1,77 @@
 // MAIN HEADER 
-
 @import '../../_mixins';
 @import '../../_global';
-
-.main-header{
-    background-color:#000;
-    height:100vh;
-    position: relative;
-    text-align: center;
-}
-
-.header-txt{
+// .main-header{
+//     background-color:#000;
+//     height:100vh;
+//     position: relative;
+//     text-align: center;
+// }
+.header-txt {
     position: absolute;
-    top:50%;
-    left:50%;
-    color:#fff;
+    top: 50%;
+    left: 50%;
+    color: #fff;
     font-family: $font-kanit;
-    @include transform(translate(-50%,-50%));
-    .author-name{
+    @include transform(translate(-50%, -50%));
+    text-align: center;
+    .author-name {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 24px;
     }
-    .job-desc{
+    .job-desc {
         font-size: 18px;
     }
-
 }
 
-.cursor{
+.cursor {
     font-weight: bold;
     font-size: 18px;
-    @include animation(fade-in-out .4s ease-in-out infinite alternate );
+    @include animation(fade-in-out .4s ease-in-out infinite alternate);
 }
 
-.header-logo{
-    max-width:170px;
+.header-logo {
+    max-width: 170px;
 }
 
-.main-nav-wrapper{
+.main-nav-wrapper {
     position: absolute;
-    bottom:0;
-    left:0;
-    width:100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-@keyframes fade-in-out{
-    from{
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    display: inline-block;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: #fff;
+        top: calc(50% + 2px);
+        left: 0;
+        transform: translateY(-50%);
+        transition: .2s all ease-in-out;
+    }
+    &:hover{
+        &:before{
+            width:100%;
+        }
+    }
+}
+
+@keyframes fade-in-out {
+    from {
         opacity: 0;
         visibility: hidden;
     }
-    to{
+    to {
         opacity: 1;
         visibility: visible;
     }
