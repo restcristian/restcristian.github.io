@@ -35,7 +35,7 @@ const ProjectsList = [
         cover: require('../../imgs/inktattoo.jpg'),
         type: 'Web/Landing Page',
         technologies: 'HTML5, CSS3, React, Firebase ',
-        url: 'https://goo.gl/Dn9a5R'
+        url: 'https://goo.gl/4zia5B'
     },
     {
         projectName: 'All The Money in the World',
