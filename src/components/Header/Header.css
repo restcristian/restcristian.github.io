@@ -3,6 +3,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   color: #fff;
   font-family: "Kanit", sans-serif;
   -webkit-transform: translate(-50%, -50%);
@@ -42,7 +43,7 @@ a {
   display: inline-block;
   position: relative; }
   a:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 4px;
@@ -50,7 +51,7 @@ a {
     top: calc(50% + 2px);
     left: 0;
     transform: translateY(-50%);
-    transition: .2s all ease-in-out; }
+    transition: 0.2s all ease-in-out; }
   a:hover:before {
     width: 100%; }
 

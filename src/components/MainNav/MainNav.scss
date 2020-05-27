@@ -1,47 +1,46 @@
 // MAIN NAV STYLES
-@import '../../_mixins';
-.main-nav{
-    width:100%;
+@import "../../_mixins";
+.main-nav {
+  width: 100%;
 }
 
-.main-nav ul{
-    padding:12px 0;
-    display:flex;
-    justify-content: center;
-    li{
-        display: inline-block;
-        color:#fff;
-        padding:0 12px;
-        text-align: center;
+.main-nav ul {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  li {
+    display: inline-block;
+    color: #fff;
+    padding: 0 12px;
+    text-align: center;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 4px;
+      background-color: #fff;
+      top: 50%;
+      left: 0;
+      @include transform(translateY(-50%));
+      @include transition(0.2s all ease-in-out);
     }
 
-    a{
-        color:#fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 16px;
-        display: inline-block;
-        position: relative;
-
-        
-        &:before{
-            content:'';
-            position: absolute;
-            width:0;
-            height: 4px;
-            background-color: #fff;
-            top:50%;
-            left:0;
-            @include transform(translateY(-50%));
-            @include transition(.2s all ease-in-out);
-        }
-
-        &:hover,&.active{
-            &:before{
-                width:100%;
-            }
-        }
-        
+    &:hover,
+    &.active {
+      &:before {
+        width: 100%;
+      }
     }
+  }
 }

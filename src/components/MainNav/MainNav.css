@@ -2,7 +2,7 @@
   width: 100%; }
 
 .main-nav ul {
-  padding: 12px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: center; }
   .main-nav ul li {
@@ -19,7 +19,7 @@
     display: inline-block;
     position: relative; }
     .main-nav ul a:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 0;
       height: 4px;
