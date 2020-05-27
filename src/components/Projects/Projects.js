@@ -20,8 +20,9 @@ const ProjectsList = [
         projectName: 'PantherSuite',
         cover: require('../../imgs/panthersuite.jpg'),
         type: 'Web/Landing Page',
-        technologies: 'HTML5, CSS3, SASS, React, Firebase, styled-components ',
-        url: 'https://panthersuit-2cf64.firebaseapp.com/#/'
+        technologies: 'HTML5, CSS3, ScrollMagic, React, Heroku, GSAP, ExpressJS, styled-components ',
+        url:'https://enigmatic-gorge-79015.herokuapp.com/',
+        url2: 'https://panthersuit-2cf64.firebaseapp.com/#/',
     },
     {
         projectName: 'Venus Concept',
