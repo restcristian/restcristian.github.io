@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../imgs/logo_w.png';
-import PDF from '../../downloadables/cv_cristianrestituyo.pdf.pdf';
+import PDF from '../../downloadables/cv_cristianrestituyo.pdf';
 
 const Header = (props) => {
   return (
