@@ -9,7 +9,7 @@ const Header = (props) => {
       <img src={logo} alt='Restituyo Logo' className='header-logo' />
       <p className='reset-padm author-name'>Cristian Restituyo</p>
       <p className='reset-padm job-desc'>JavaScript Developer</p>
-      <p className='reset-padm'>Cologne, Germany</p>
+      <p className='reset-padm'>Berlin, Germany</p>
       <p className='reset-padm'>
         <a
           href='https://github.com/restcristian'
