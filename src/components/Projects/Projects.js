@@ -26,20 +26,6 @@ const ProjectsList = [
     url: "http://athletics.augsburg.edu/index.aspx",
   },
   {
-    projectName: "Venus Concept",
-    cover: require("../../imgs/venusconcept.jpg"),
-    type: "Web/Landing Page",
-    technologies: "HTML5, CSS3, JavaScript, WordPress",
-    url: "https://venusconcept.network/template-1-demo-1/",
-  },
-  {
-    projectName: "Ink Tattoo",
-    cover: require("../../imgs/inktattoo.jpg"),
-    type: "Web/Landing Page",
-    technologies: "HTML5, CSS3, React, Firebase ",
-    url: "https://goo.gl/4zia5B",
-  },
-  {
     projectName: "All The Money in the World",
     cover: require("../../imgs/allthemoney.jpg"),
     type: "Web/Banner",
