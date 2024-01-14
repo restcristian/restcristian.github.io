@@ -20,6 +20,6 @@
     "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {
-    "firebase": "^9.15.0"
+    "firebase": "^9.23.0"
   }
 }
